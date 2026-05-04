@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    vi
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'Hệ Thống');
+define('_MI_SYSTEM_DESC', 'Để quản lý cho những sự thiết đặt chính của site.');
+define('_MI_SYSTEM_BNAME2', 'Mục thành viên');
+define('_MI_SYSTEM_BNAME3', 'Đăng nhập');
+define('_MI_SYSTEM_BNAME4', 'Tìm kiếm');
+define('_MI_SYSTEM_BNAME5', 'Nội dung đang đợi');
+define('_MI_SYSTEM_BNAME6', 'Mục chính');
+define('_MI_SYSTEM_BNAME7', 'Thông tin về site');
+define('_MI_SYSTEM_BNAME8', 'Ai đang trực tuyến');
+define('_MI_SYSTEM_BNAME9', 'Thành viên tích cực');
+define('_MI_SYSTEM_BNAME10', 'Thành viên mới');
+define('_MI_SYSTEM_BNAME11', 'Bình luận gần đây');
+define('_MI_SYSTEM_BNAME12', 'Tùy chọn thông báo');
+define('_MI_SYSTEM_BNAME13', 'Giao diện');
+define('_MI_SYSTEM_ADMENU1', 'Biễn');
+define('_MI_SYSTEM_ADMENU2', 'Khối');
+define('_MI_SYSTEM_ADMENU3', 'Nhóm');
+define('_MI_SYSTEM_ADMENU5', 'Mô-đun');
+define('_MI_SYSTEM_ADMENU6', 'Tùy chọn');
+define('_MI_SYSTEM_ADMENU7', 'Hình mặt cười');
+define('_MI_SYSTEM_ADMENU9', 'Chức vụ thành viên');
+define('_MI_SYSTEM_ADMENU10', 'Chỉnh sửa thành viên');
+define('_MI_SYSTEM_ADMENU11', 'Gửi email cho người dùng');
+define('_MI_SYSTEM_ADMENU12', 'Tìm thành viên');
+define('_MI_SYSTEM_ADMENU13', 'Hình ảnh');
+define('_MI_SYSTEM_ADMENU14', 'Hình đại diện');
+define('_MI_SYSTEM_ADMENU15', 'Khung mẫu');
+define('_MI_SYSTEM_ADMENU16', 'Bình luận');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Cài đặt chung');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Trợ giúp trực tuyến?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Phần này cung cấp cho bạn các mẹo và trợ giúp trực tuyến');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'Biểu tượng');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Vụn bánh mì');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Mục đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Avatar đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Banner đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Bình luận đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Trình quản lý tệp đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Trình quản lý hình ảnh hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Người dùng email đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Smiley đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Xếp hạng người dùng đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Người dùng đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Bảo trì đang hoạt động');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Số hàng hiển thị trong phần quản trị');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Số lượng avatar hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Số lượng banner hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Số lượng bình luận hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Số lượng nhóm hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Số lượng hình ảnh hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Số lượng mặt cười hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Số thứ hạng hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Số lượng người dùng hiển thị trên mỗi trang');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Cài đặt trình chỉnh sửa');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Trình soạn thảo cho khối:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Trình soạn thảo cho bình luận:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Trình soạn thảo cho tất cả module:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'Chủ đề jQuery');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Tắt tạm thời');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Tin nhắn riêng');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Kích hoạt hệ thống menu');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Kích hoạt hệ thống quản lý menu tích hợp để điều hướng trang web');

@@ -1,0 +1,38 @@
+<div class="outer" id="help-template">
+<h1 class="head">Trợ giúp: Mẫu</h1>
+<h4 class="odd">Mô tả</h4>
+<p class="even">
+        XOOPS cho phép có sự tách biệt giữa cách trình bày thực tế của trang web (“<em>da</em>” hoặc giao diện người dùng) và mã chạy ở phía sau. Mã đầu tiên được xử lý bằng một cơ chế phức tạp dựa trên các chủ đề đồ họa. Một chủ đề có thể bao gồm, ở dạng cơ bản, HTML thiết yếu
+        các mẫu xác định giao diện trực quan của trang web, cũng như các biểu định kiểu và hình ảnh cần thiết để bổ sung cho giao diện trực quan đó. Các chủ đề có thể chuyển đổi trong giao diện quản trị, do đó, việc thay đổi toàn bộ diện mạo của trang XOOPS chỉ là vấn đề thay đổi giá trị của một
+        bộ chọn và nhấp vào “Chấp nhận”. XOOPS cũng cung cấp cho quản trị viên trang khả năng cho phép người dùng lựa chọn trong số một số chủ đề có sẵn.<br/><br/>
+
+        Nói chung thì a <strong><em>theme</em></strong> là khung trực quan cấp cao của một trang web: ví dụ: chủ đề xác định bố cục chung của trang web; mặt khác, nó thường không xác định sự phân bổ nội dung cụ thể trong một khối. Việc này được xử lý bởi một
+        thực thể khác gọi là <em><strong>template set</strong></em>. Một bộ mẫu<em> </em>là một tập hợp các mẫu HTML xác định cách trình bày nội dung trong tất cả các khối tạo thành Trang web XOOPS. Nếu chúng ta muốn một ẩn dụ rõ ràng hơn cho điều này, chúng ta có thể nói rằng chủ đề giống như
+        kiến trúc sư của một ngôi nhà, trong khi bộ mẫu giống như người trang trí nội thất. Người đầu tiên đặt ra các bức tường và xác định sự phân bổ chung, nhưng người thứ hai là người chịu trách nhiệm về “<em>thay đồ</em>” những bức tường đó.<br/><br/>
+
+        Nếu chủ đề đang hoạt động là một chủ đề đơn giản chỉ bao gồm tệp chủ đề, tệp CSS và một số hình ảnh, XOOPS sử dụng bộ mẫu mặc định để xác định cách trình bày các khối. Tuy nhiên, một số chủ đề phức tạp đủ phức tạp để bao gồm bộ mẫu riêng của chúng. Trong trường hợp này, trang web
+        quản trị viên phải sử dụng giao diện quản trị để đặt cả chủ đề và bộ mẫu. <br/><br/>
+
+        Chủ đề thế nào <em>kỳ diệu
+chủ đề</em> xong chưa? Nghĩa là, làm cách nào các mẫu HTML có thể chứa nội dung động? Điều này được thực hiện không phải bằng gương và khói mà bằng một công cụ tạo mẫu thông minh có tên là
+        <strong><a href="https://www.smarty.net/" rel="external">Thông minh</a></strong> điều đó tạo nên chức năng của cái thường được gọi là
+        <em><strong>nội suy biến</strong></em>. Nói một cách đơn giản, có thể nói hệ thống XOOPS sử dụng các file PHP để chứa logic của các module (truy cập cơ sở dữ liệu, cấp phát biến, quản lý quyền...), file HTML có chèn biến Smarty để quản lý
+        giao diện trực quan thực tế và công cụ Smarty để chèn các giá trị và chuỗi vào các vị trí cụ thể trong HTML nhằm xây dựng các trang mà người dùng cuối nhìn thấy. Nói chung, điều này có ý nghĩa gì với bạn có thể được tóm tắt dễ dàng: nhờ hệ thống theo chủ đề của nó, XOOPS cho phép các nhà thiết kế trang web xây dựng nhiều hơn
+        các trang web thú vị và có hình ảnh bắt mắt mà không cần quan tâm nhiều đến những gì diễn ra bên trong.
+    </p>
+<h4 class="odd">Sao chép và tải xuống các bộ mẫu</h4>
+<p class="even">
+        Nếu bạn muốn tạo một bộ mẫu tùy chỉnh, bạn có thể tạo một bản sao của bộ mẫu mặc định (hoặc bất kỳ bộ nào khác) bằng cách chọn '<em>bản sao</em>’ liên kết (bạn sẽ được nhắc đặt tên cho bộ mới). Không giống như mặc định, các bộ mẫu khác có thể được chỉnh sửa tự do. Bạn cũng có thể lưu một bản sao của
+        mẫu được đặt vào đĩa bằng cách chọn '
+thư mục<em>tải xuống</em>’ hoặc xóa nó bằng liên kết ‘<em>xóa</em>’ liên kết. Đôi khi bạn cũng có thể thấy thêm ‘<em>Tạo ra</em>’ liên kết bên cạnh các mô-đun mới mà mẫu chưa được tạo.
+    </p>
+<h4 class="odd">Chỉnh sửa mẫu</h4>
+<p class="even">
+        Bạn có thể xem danh sách đầy đủ các mẫu có sẵn bằng cách duyệt qua thư mục treeview. Khi bạn chọn một mẫu, XOOPS sẽ mở nó trong trình chỉnh sửa nơi bạn có thể chỉnh sửa. <br/><br/>
+
+        Trong khi chỉnh sửa mẫu, bạn phải bật tùy chọn tự động cập nhật tệp .tpl mẫu mô-đun nếu có tệp mới hơn trong thư mục chủ đề/chủ đề/mẫu của bạn cho chủ đề hiện tại (Mô-đun hệ thống -&gt; Tùy chọn -&gt; Cài đặt chung -&gt; Cập nhật tệp .tpl mẫu mô-đun
+        từ thư mục chủ đề/chủ đề/mẫu của bạn? -&gt; ‘<em>Có</em>’). Điều này sẽ được tắt khi trang web được công khai.<br/><br/>
+        Nếu bạn vô tình làm hỏng một mẫu, đừng quên rằng bạn có thể truy xuất '<em>tốt</em>’ sao chép từ bộ mẫu mặc định. Nếu bạn đang làm việc với các mẫu không chuẩn, có thể bạn nên lưu một bản sao vào đĩa trước khi bắt đầu sửa đổi chúng.
+
+    </p>
+</div>

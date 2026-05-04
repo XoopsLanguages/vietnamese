@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Trợ giúp: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Hồ sơ <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ ------ Nội dung trợ giúp ---------- 
+<h4 class="odd">MÔ TẢ</h4>
+<p class="even">Mô-đun Hồ sơ dùng để quản lý các trường hồ sơ người dùng tùy chỉnh.</p>
+<h4 class="odd">CÀI ĐẶT/GỠ CÀI ĐẶT</h4>
+<p>Không cần biện pháp đặc biệt nào, hãy làm theo quy trình cài đặt tiêu chuẩn – giải nén thư mục /profile vào thư mục ../modules. Cài đặt mô-đun thông qua Quản trị viên -&gt; Mô-đun hệ thống -&gt; Mô-đun.</p>
+<p>Hướng dẫn chi tiết về cài đặt mô-đun có sẵn trong <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">Hướng dẫn vận hành XOOPS</a> <br/><br/></p>
+<h4 class="odd">HƯỚNG DẪN VẬN HÀNH</h4>
+<p class="even">Để thiết lập mô-đun này, bạn cần:</p>
+<ul>
+<li>Định cấu hình tùy chọn của bạn cho mô-đun (xem 'Tùy chọn') và tùy chọn khối Hồ sơ nếu bạn định sử dụng nó (xem 'Khối').</li>
+<li>Chỉnh sửa Danh mục hiện có hoặc thêm danh mục mới.</li>
+<li>Chỉnh sửa các trường hiện có hoặc thêm các trường mới. Tại đây, bạn có thể chỉ định trường nào sẽ hiển thị trong danh mục nào và liệu chúng có hiển thị trong quá trình đăng ký người dùng hay không.</li>
+<li>Xác định thứ tự các bước Đăng ký.</li>
+<li>Và cuối cùng, bạn có thể đặt quyền cho từng trường riêng lẻ - trường nào có thể chỉnh sửa, trường nào có thể tìm kiếm được.<br/><br/></li>
+</ul>
+<h4 class="odd">Các biện pháp chống thư rác</h4>
+<p class="even">Để giảm thiểu việc đăng ký spam, hãy làm như sau:</p>
+<ul>
+<li> đi tới mô-đun Trình bảo vệ trong Quản trị viên, đi tới Tùy chọn, rồi ở dưới cùng, tại tùy chọn này:
+
+            "Dừng thư rác diễn đàn"
+            Kiểm tra dữ liệu POST đối với những kẻ gửi thư rác đã đăng ký trên cơ sở dữ liệu www.stopforumspam.com. <br/>
+            Đặt thành "Cấm IP (không giới hạn)"
+        </li>
+<br/>
+<li> trong /class/captcha/config.php, đảm bảo rằng chế độ được đặt là "văn bản":<br/><br/>
+<span style="font-style: italic;">     trả về $config = mảng(<br/>
+    'disabled' =&gt; false, // Tắt CAPTCHA<br/>
+    'mode' =&gt; 'text', // chế độ mặc định, bạn có thể chọn 'text', 'image', 'recaptcha'(yêu cầu khóa api)<br/>
+    'name' =&gt; 'xoopscaptcha', // tên hình ảnh xác thực<br/>
+    'skipmember' =&gt; true, // Bỏ qua kiểm tra CAPTCHA đối với thành viên<br/>
+    'maxattempts' =&gt; 10, // Số lần thử tối đa cho mỗi phiên<br/>
+    );</span></li>
+<br/>
+<li> Trong mô-đun Hồ sơ, đi tới Quản trị viên và ở bước Cơ bản có tại:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            đặt "Lưu sau khi dừng" thành "Không"
+        </li>
+<br/><br/>
+<li> Trong Tùy chọn hồ sơ, đặt tùy chọn "Sử dụng hình ảnh xác thực sau bước đăng ký thứ hai" thành "Có" (đó là mặc định)</li>
+<br/>
+<ul>
+<h4 class="odd">HƯỚNG DẪN</h4>
+<p class="even">Hướng dẫn sắp ra mắt.<br/></p>
+ ------ Nội dung trợ giúp ---------- 
+</ul></ul></div>

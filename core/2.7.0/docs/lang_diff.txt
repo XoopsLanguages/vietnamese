@@ -1,0 +1,664 @@
+SỰ KHÁC BIỆT VỀ NGÔN NGỮ
+=====================
+
+Dưới đây là những khác biệt về ngôn ngữ giữa các phiên bản tiếp theo.
+
+================================
+2025/03/30: Phiên bản 2.7.0-Betas (trước đây được phát hành là 2.5.12-Betas)
+================================
+/htdocs/modules/system/lingu/english/admin.php
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS', 'Menu');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_DESC', 'Quản lý menu điều hướng trang web');
+
+/htdocs/modules/system/lingu/english/modinfo.php
+- đã thêm định nghĩa('_MI_SYSTEM_MENUS_ACTIVE', 'Kích hoạt hệ thống menu');
+- đã thêm định nghĩa('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Kích hoạt hệ thống quản lý menu tích hợp để điều hướng trang web');
+
+/htdocs/modules/system/lingu/english/admin/menus.php (TẬP TIN MỚI)
+Các trường
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_NAV_MAIN', 'Trình quản lý menu');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_NAV_BACK', 'Quay lại danh sách menu');
+- ​​đã thêm định nghĩa('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Chế độ xem danh mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Mẹo:</strong><ul>...');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ACTIVE', 'Hoạt động');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Đã bật');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Đã tắt');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_SAVED', 'Đã lưu thành công');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_DELETED', 'Đã xóa thành công');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Đã lưu đơn hàng');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_LISTCAT', 'Danh sách danh mục');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_LISTITEM', 'Mục danh sách');
+- ​​đã thêm định nghĩa('_AM_SYSTEM_MENUS_ADDCAT', 'Thêm danh mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_EDITCAT', 'Chỉnh sửa danh mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_DELCAT', 'Xóa danh mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_CATTITLE', 'Tiêu đề danh mục');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Một tên hằng ngôn ngữ (ví dụ MENUS_HOME) có thể được sử dụng ở đây để nhãn có thể dịch được.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_CATPREFIX', 'Tiền tố (HTML)');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Đánh dấu tùy chọn được hiển thị trước tiêu đề danh mục, chẳng hạn như biểu tượng Phông chữ tuyệt vời.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_CATSUFFIX', 'Hậu tố (HTML)');
+- thêm định nghĩa('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Đánh dấu tùy chọn hiển thị sau tiêu đề danh mục.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_CATURL_DESC', 'Liên kết cho chính danh mục đó, chẳng hạn như "index.php" hoặc một URL tuyệt đối.');
+- ​​đã thêm định nghĩa('_AM_SYSTEM_MENUS_CATTARGET', 'Mục tiêu liên kết');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_CATPOSITION', 'Vị trí');
+- đã thêm defin('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Bạn có chắc chắn muốn xóa danh mục "%s" và tất cả các mục trong đó không?');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ADDITEM', 'Thêm mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_EDITITEM', 'Chỉnh sửa mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_DELITEM', 'Xóa mục');
+- ​​đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMTITLE', 'Tiêu đề mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Một tên hằng ngôn ngữ có thể được sử dụng ở đây để nhãn có thể dịch được.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Tiền tố (HTML)');
+- ​​đã thêm định nghĩa ('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Đánh dấu tùy chọn hiển thị trước tiêu đề mục, chẳng hạn như biểu tượng Phông chữ tuyệt vời.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Hậu tố (HTML)');
+- thêm defin('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Đánh dấu tùy chọn hiển thị sau tiêu đề mục. Hỗ trợ trình giữ chỗ <{xoInboxCount}>.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMTARGET', 'Mục tiêu liên kết');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Vị trí');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMPARENT', 'Mục gốc');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Danh mục');
+- ​​đã thêm defin('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Bạn có chắc chắn muốn xóa mục "%s" và các mục phụ của nó không?');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_TARGET_SELF', 'Cùng một cửa sổ');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Cửa sổ mới');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Các nhóm có thể xem danh mục này');
+- đã thêm defin('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Người dùng phải có quyền truy cập danh mục trước khi bất kỳ mục nào trong danh mục đó hiển thị.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Các nhóm có thể xem mục này');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Quyền của mục được kiểm tra sau quyền của danh mục gốc.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Không tìm thấy danh mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Không thể xóa danh mục được bảo vệ');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Không thể kích hoạt: danh mục không hoạt động');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Không tìm thấy mục');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Không thể xóa mục được bảo vệ');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Đã chọn mục gốc không hợp lệ');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Không thể đặt cha mẹ: nó sẽ tạo tham chiếu vòng tròn');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Vượt quá độ sâu lồng tối đa (3 cấp độ)');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Không thể kích hoạt: mục gốc không hoạt động');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'Không có mục menu con nào trong danh mục này.');
+- đã thêm định nghĩa('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Bật mục này trước khi chỉnh sửa');
+- đã thêm định nghĩa ('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Bật mục này trước khi xóa nó');
+- đã thêm định nghĩa ('MENUS_HOME', 'Trang chủ');
+- đã thêm định nghĩa('MENUS_ADMIN', 'Quản trị');
+- đã thêm định nghĩa('MENUS_ACCOUNT', 'Tài khoản');
+- đã thêm định nghĩa('MENUS_ACCOUNT_EDIT', 'Chỉnh sửa tài khoản');
+- đã thêm định nghĩa('MENUS_ACCOUNT_LOGIN', 'Đăng nhập');
+- ​​đã thêm định nghĩa('MENUS_ACCOUNT_LOGOUT', 'Đăng xuất');
+- đã thêm định nghĩa('MENUS_ACCOUNT_REGISTER', 'Đăng ký');
+- đã thêm định nghĩa('MENUS_ACCOUNT_MESSAGES', 'Tin nhắn');
+- đã thêm định nghĩa('MENUS_ACCOUNT_NOTIFICATIONS', 'Thông báo');
+- đã thêm định nghĩa('MENUS_ACCOUNT_TOOLBAR', 'Thanh công cụ');
+
+/htdocs/modules/system/constants.php
+- đã thêm định nghĩa ('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/lingu/english/blocks.php
+- đã thêm định nghĩa ('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "Chặn 'Nội dung chờ' không được dùng nữa kể từ XOOPS 2.5.11, vui lòng sử dụng mô-đun Đang chờ");
+
+/htdocs/install/lingu/english/welcome.php
+- cập nhật phiên bản PHP & MySQL
+
+/htdocs/modules/pm/lingu/english/main.php
+- đã cập nhật định nghĩa('_PM_EMAIL_DESC', 'Kính gửi %s, đây là tin nhắn được chuyển từ tài khoản của bạn tại ' . $GLOBALS['xoopsConfig']['sitename']);
+Liên kết
+- đã cập nhật định nghĩa('_PM_EMAIL_DESC', 'Kính gửi %s, đây là tin nhắn được chuyển từ tài khoản của bạn tại ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/lingu/english/user.php
+- đã cập nhật định nghĩa('_US_SORRYNOTFOUND', 'Xin lỗi, không tìm thấy thông tin người dùng tương ứng.');
+- được cập nhật defin('_US_SORRYNOTFOUND', 'Nếu tài khoản khớp với thông tin được cung cấp, chúng tôi sẽ xử lý yêu cầu của bạn. Nếu bạn không nhận được email trong thời gian ngắn, vui lòng kiểm tra thư mục thư rác hoặc liên hệ với quản trị viên trang web.');
+
+- đã cập nhật định nghĩa('_US_PWDMAILED', 'Mật khẩu cho %s được gửi qua thư.');
+- được cập nhật defin('_US_PWDMAILED', 'Nếu tài khoản này tồn tại cho email này, bạn sẽ nhận được hướng dẫn đặt lại mật khẩu. Hãy kiểm tra thư mục thư rác nếu cần hoặc liên hệ với quản trị viên trang web.');
+
+- đã cập nhật định nghĩa('_US_CONFMAIL', 'Email xác nhận cho %s đã được gửi qua thư.');
+- đã cập nhật defin('_US_CONFMAIL', 'Nếu tài khoản này tồn tại cho email này, bạn sẽ nhận được hướng dẫn đặt lại mật khẩu. Hãy kiểm tra thư mục thư rác nếu cần hoặc liên hệ với quản trị viên trang web.');
+
+/htdocs/class/xoopseditor/tinymce5/lingu/english.php
+- đã đổi tên _XOOPS_EDITOR_TINYMCE_LANGUAGE5 thành _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/lingu/english/admin.php
+- đã đổi tên _OXYGEN_Server_API thành _OXYGEN_SERVER_API
+
+/htdocs/modules/system/lingu/english/admin/preferences.php.
+- đã thêm định nghĩa('_MD_AM_SENDMAIL_NOT_FOUND', 'Không tìm thấy tệp nhị phân Sendmail. Vui lòng kiểm tra cấu hình máy chủ của bạn.');
+- đã thêm định nghĩa('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Không phát hiện thấy tệp nhị phân tương thích với sendmail hợp lệ. Cài đặt MTA (ví dụ: Postfix, msmtp) hoặc chuyển sang SMTP trong Tùy chọn.');
+
+/htdocs/modules/system/lingu/english/admin/users.php
+- đã thêm định nghĩa('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Nhóm không xác định');
+
+/htdocs/modules/system/lingu/english/comment.php
+- đã thêm định nghĩa('_CM_ADDCOMMENT', 'Thêm bình luận');
+
+
+/htdocs/install/lingu/english/install.php
+- đã thêm định nghĩa('_WEBSITE_NAME', 'Trang web XOOPS');
+- đã thêm định nghĩa('_WEBSITE_SLOGAN', 'Chỉ cần sử dụng nó!');
+- đã thêm định nghĩa('_WEBSITE_META_KEYWORDS', 'xoops, khung ứng dụng web, cms, hệ thống quản lý nội dung');
+- thêm định nghĩa('_WEBSITE_FOOTER', "Powered by XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='Dự án XOOPS'>Dự án XOOPS</a>");
+- đã thêm định nghĩa('_WEBSITE_COPYRIGHT', 'Bản quyền © 2001-{X_YEAR}');
+- đã thêm định nghĩa('_WEBSITE_DESCRIPTION', 'XOOPS là tập lệnh cổng thông tin nguồn mở dựa trên Hướng đối tượng động được viết bằng PHP.');
+- đã thêm định nghĩa('_WEBSITE_CENSOR_REPLACE', 'OOPS');
+
+
+================================
+2023/10/01: Phiên bản 2.5.11-Final
+================================
+/ngôn ngữ/english/uploader.php
+- đã thêm định nghĩa('_ER_UP_MODE_NOT_CHANGED', 'Tệp đã tải lên nhưng không thể thay đổi chế độ');
+
+================================
+2023/10/01: Phiên bản 2.5.11-RC3
+================================
+
+CÁC TẬP TIN ĐÃ THAY ĐỔI:
+nâng cấp/ngôn ngữ/english/upgrade.php
+nâng cấp/ngôn ngữ/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/lingu/english.php
+- đã thêm định nghĩa('_FAILGETIMG', 'Không lấy được hình ảnh %s');
+
+/htdocs/modules/system/lingu/english/modinfo.php
+- đã thêm định nghĩa('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Tạm thời vô hiệu hóa');
+- đã thêm định nghĩa('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Email');
+- ​​đã thêm định nghĩa('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Tin nhắn riêng');
+
+/htdocs/modules/system/lingu/english/admin/preferences.php
+- đã thêm định nghĩa('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Phương thức thông báo mặc định');
+- đã thêm định nghĩa('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Dành cho người dùng mới khi họ đăng ký nhận thông báo từ, ví dụ: diễn đàn.');
+- đã thêm định nghĩa('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Phiên bản 2.5.11-RC1
+================================
+
+CÁC TẬP TIN ĐÃ THAY ĐỔI:
+htdocs/lingu/english/global.php
+- đã thêm định nghĩa('_DB_QUERY_ERROR', 'Truy vấn không thành công! SQL: %s - Lỗi: ');
+- đã thêm định nghĩa('_PRINT', 'Print');
+- đã thêm định nghĩa('_PDF', 'PDF');
+- ​​đã thêm định nghĩa('_OFF', 'Tắt');
+
+================================
+2021/09/02: Phiên bản 2.5.11-Betas
+================================
+
+CÁC TẬP TIN ĐÃ THAY ĐỔI:
+htdocs/lingu/english/admin.php
+- đã thêm định nghĩa('_AD_WARNING_NO_XML', 'Phần mở rộng PHP XML là cần thiết cho chức năng này.');
+
+htdocs/xoops_lib/modules/protector/lingu/english/admin.php
+- đã thêm định nghĩa('_AM_ADMINSTATS_LAST_MONTH', 'Tháng trước');
+- đã thêm định nghĩa('_AM_ADMINSTATS_LAST_WEEK', 'Tuần trước');
+- đã thêm định nghĩa('_AM_ADMINSTATS_LAST_DAY', 'Ngày cuối cùng');
+- ​​đã thêm định nghĩa('_AM_ADMINSTATS_LAST_HOUR', 'Giờ trước');
+
+htdocs/lingu/english/global.php
+- đã thêm định nghĩa('_PRINT', 'Print');
+- đã thêm định nghĩa('_PDF', 'PDF');
+- ​​đã thêm định nghĩa('_OFF', 'Tắt');
+- đã thay đổi định nghĩa('_ON', 'On'); //từ 'bật'
+
+htdocs/lingu/english/global.php
+- ​​đã thay đổi định nghĩa('_SIZE', 'Size'); // cỡ chữ
+- đã thay đổi định nghĩa('_FONT', 'Font'); // họ phông chữ
+- đã thay đổi định nghĩa('_COLOR', 'Color'); // màu phông chữ
+
+htdocs/install/lingu/english/install.php
+- đã thêm định nghĩa('ERR_COPY_CONFIG_FILE', 'Không thể sao chép tệp cấu hình %s');
+
+htdocs/install/lingu/english/welcome.php
+- đã thay đổi phiên bản PHP & MySQL được đề xuất, liên kết đã thay đổi thành "https:"
+
+htdocs/modules/system/lingu/english/admin/preferences.php
+- đã thay đổi định nghĩa('_MD_AM_SMTPHOSTDESC', 'Một tên máy chủ hoặc nhiều tên máy chủ được phân cách bằng dấu chấm phẩy.<br>Bạn cũng có thể chỉ định một cổng khác cho mỗi máy chủ bằng cách sử dụng định dạng sau: [tên máy chủ:port] (ví dụ: "smtp1.example.com:25;smtp2.example.com").<br>Bạn cũng có thể chỉ định loại mã hóa, ví dụ: (ví dụ: "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Các máy chủ sẽ được thử theo thứ tự.');
+
+htdocs/modules/system/lingu/english/help/blocksadmin.html
+
+htdocs/modules/system/lingu/english/admin/modulesadmin.php
+- đã thay đổi định nghĩa('_AM_SYSTEM_MODULES_ADMIN', 'Quản trị mô-đun XOOPS');
+
+PHIM MỚI:
+htdocs/themes/xswatch4/lingu/english/main.php
+Bắt đầu là bản sao của xswatch/lingu/english/main.php sau đó:
+- đã thêm định nghĩa('THEME_TOOLBAR_DEBUGMODE', 'Chế độ gỡ lỗi');
+- đã thêm định nghĩa('THEME_TOOLBAR_THIS_MODULE', 'Mô-đun này');
+- đã thêm định nghĩa('THEME_PERMISSIONS_LEGEND', 'Quyền &amp; Truyền thuyết');
+- đã thêm định nghĩa('THEME_INBOX_ALERT', 'PM Alert');
+- đã thêm định nghĩa('THEME_INBOX_LINK', 'Nhấp vào đây để xem Hộp thư đến của bạn!');
+- đã thêm định nghĩa('THEME_EVENT_DOWNLOADS', 'Tải xuống sự kiện');
+- ​​đã thêm định nghĩa('THEME_FILE_NAME', 'File');
+- đã thêm định nghĩa('THEME_FILE_SIZE', 'Size');
+- đã thêm định nghĩa('THEME_Control_NEXT', 'Next');
+- đã thêm định nghĩa('THEME_Control_PREVIOUS', 'Previous');
+
+htdocs/lingu/english/user.php
+- đã thêm định nghĩa('_US_DESCRIPTIONMIN', 'Độ dài yêu cầu tối thiểu: %s');
+- đã thêm định nghĩa('_US_DESCRIPTIONMAX', 'Độ dài tối đa: %s');
+
+htdocs/modules/system/lingu/english/admin/mailusers.php
+- đã thêm định nghĩa ('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} sẽ in tên hoặc bỏ tên nếu trống');
+
+htdocs/modules/system/lingu/english/admin/images.php
+- đã thêm định nghĩa("_AM_SYSTEM_IMAGES_SCATDELNG","Không thể xóa danh mục này");
+
+htdocs/modules/system/lingu/english/admin/modulesadmin.php
+- ​​đã thêm định nghĩa('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Quản trị viên mô-đun này');
+
+CÁC TẬP TIN ĐÃ XÓA:
+htdocs/modules/system/lingu/english/admin/users.php
+- đã xóa định nghĩa('_AM_SYSTEM_USERS_MODIFYUSER', 'Sửa đổi người dùng');
+- đã xóa định nghĩa('_AM_SYSTEM_USERS_DELUSER', 'Xóa người dùng');
+- đã xóa định nghĩa('_AM_SYSTEM_USERS_GO', 'Go!');
+
+================================
+29/04/2019: Phiên bản 2.5.10 Cuối cùng
+================================
+ĐỊNH NGHĨA THÊM/XÓA:
+htdocs/xoops_lib/modules/protector/lingu/english/admin.php
+- đã thêm định nghĩa('_AM_LABEL_BAN_BY_IP', 'Cấm IP trên các bản ghi đã kiểm tra:');
+- đã thêm định nghĩa('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- đã thêm định nghĩa('_AM_JS_BANCONFIRM', 'IP Cấm được không?');
+- đã thêm định nghĩa('_AM_MSG_BANNEDIP', 'IP bị cấm');
+- đã thêm định nghĩa('_AM_ADMINSTATS_TITLE', 'Tóm tắt nhật ký bảo vệ');
+
+htdocs/xoops_lib/modules/protector/lingu/english/modinfo.php
+- đã thêm định nghĩa($constpref . '_ADMINSTATS', 'Tổng quan');
+- ​​đã thêm định nghĩa($constpref . '_BANIP_TIME0DSC', 'Thời gian tạm dừng tính bằng giây đối với lệnh cấm IP tự động');
+
+htdocs/lingu/english/uploader.php
+- đã thêm định nghĩa('_ER_UP_INDEXNOTSET', 'Cố gắng tìm nạp nhiều tệp, chỉ mục phải được đặt.');
+
+htdocs/lingu/english/admin.php
+- đã thêm định nghĩa ('_AD_WARNING_OLD_PHP', 'CẢNH BÁO: Hãy xem xét nâng cấp lên phiên bản PHP mới hơn. Phiên bản %s hoặc mới hơn được khuyến nghị và sẽ được yêu cầu trong các phiên bản XOOPS trong tương lai.');
+
+ĐỔI ĐỊNH NGHĨA
+htdocs/xoops_lib/modules/protector/lingu/english/admin.php
+- xác định('_AM_TXT_HOTOTOCHANGEDB',"Nếu bạn muốn thay đổi tiền tố,<br> hãy chỉnh sửa %s/data/secure.php theo cách thủ công.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- đã thay đổi phiên bản PHP được đề xuất, thêm phần Ghi chú Đặc biệt cho SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/lingu/english/main.php
+- trong định nghĩa của '_AM_MODULEADMIN_ADMIN_FOOTER', đã thay đổi liên kết XOOPS thành 'https://xoops.org'
+
+PHIM MỚI:
+không áp dụng
+
+===============================
+2017/08/01: Phiên bản 2.5.9 Cuối cùng
+===============================
+ĐỊNH NGHĨA THÊM/XÓA
+
+htdocs/Frameworks/moduleclasses/moduleadmin/lingu/english/main.php
+- đã thêm định nghĩa('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Số tiền');
+- đã thêm định nghĩa('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Vui lòng nhập số tiền USD, ví dụ: $25,00');
+- đã thêm định nghĩa('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- đã thêm định nghĩa('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- đã thêm định nghĩa('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- đã thêm định nghĩa('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Quyên góp trực tuyến bằng PayPal hoặc thẻ tín dụng chính!');
+
+htdocs/install/lingu/english/install.php
+*LƯU Ý* Trình cài đặt đã được thay đổi đáng kể, vì vậy tệp này cần được xem xét kỹ lưỡng
+- đã thêm định nghĩa("CURL_HTTP", "Thư viện URL khách hàng (cURL)");
+- đã thêm định nghĩa('XOOPS_COOKIE_DOMAIN_LABEL', 'Miền cookie cho trang web');
+- đã thêm defin('XOOPS_COOKIE_DOMAIN_HELP', 'Miền để đặt cookie. Có thể để trống, máy chủ lưu trữ đầy đủ từ URL (www.example.com) hoặc miền đã đăng ký không có miền phụ (example.com) để chia sẻ trên các miền phụ (www.example.com và blog.example.com.)');
+- thêm định nghĩa('INTL_SUPPORT', 'Chức năng quốc tế hóa');
+- đã thêm định nghĩa('XOOPS_SOURCE_CODE', "XOOPS trên GitHub");
+- đã thêm định nghĩa('XOOPS_INSTALLING', 'Đang cài đặt');
+- đã thêm định nghĩa('XOOPS_ERROR_ENCOUNTERED', 'Error');
+- đã thêm định nghĩa ('XOOPS_ERROR_SEE_BELOW', 'Xem bên dưới để biết tin nhắn.');
+- ​​đã thêm định nghĩa('MODULES_AVAILABLE', 'Các mô-đun có sẵn');
+- đã thêm định nghĩa('INSTALL_THIS_MODULE', 'Thêm %s');
+
+htdocs/install/lingu/english/finish.php
+- thay đổi để giới thiệu người dùng mới tới xoops.org để biết thông tin về các mô-đun và chủ đề
+
+htdocs/lingu/english/global.php
+- đã thêm định nghĩa('_UPLOAD', 'Upload');
+- đã thêm định nghĩa('_SELECTFILES', 'Chọn tệp');
+- đã thêm định nghĩa('_DROPFILESHERE', 'Thả tệp vào đây');
+- đã thêm định nghĩa('_RETRY', 'Thử lại');
+- đã thêm định nghĩa('_OK', 'Ok');
+- đã thêm định nghĩa('_FORMATPROGRESS', '{percent}% of {total_size}');
+- ​​đã thêm định nghĩa('_FAILUPLOAD', 'Tải lên không thành công!');
+- đã thêm định nghĩa('_WAITINGFORRESPONSE', 'Đang xử lý...');
+- đã thêm định nghĩa('_PAUSED', 'Paused');
+- đã thêm định nghĩa ('_PROCESSINGDROPPEDFILES', 'Đang xử lý các tệp bị xóa...');
+- đã thêm định nghĩa('_TYPEERROR', '{file} có phần mở rộng không hợp lệ. (Các) phần mở rộng hợp lệ: {extensions}!');
+- đã thêm định nghĩa('_SIZEERROR', '{file} quá lớn, kích thước tệp tối đa là {sizeLimit}!');
+- đã thêm định nghĩa('_MINSIZEERROR', '{file} quá nhỏ, kích thước tệp tối thiểu là {minSizeLimit}!');
+- đã thêm định nghĩa('_EMPTYERROR', '{file} trống, vui lòng chọn lại các tệp không có nó!');
+- ​​đã thêm định nghĩa('_NOFILESERROR', 'Không có tệp nào để tải lên!');
+- đã thêm định nghĩa('_TOOMANYITEMSERROR', 'Quá nhiều mục ({netItems}) sẽ được tải lên. Giới hạn mục là {itemLimit}!');
+- đã thêm định nghĩa('_MAXHEIGHTIMAGEERROR', 'Hình ảnh quá cao!');
+- đã thêm định nghĩa('_MAXWIDTHIMAGEERROR', 'Hình ảnh quá rộng!');
+- đã thêm định nghĩa('_MINHEIGHTIMAGEERROR', 'Hình ảnh không đủ cao!');
+- đã thêm định nghĩa('_MINWIDTHIMAGEERROR', 'Hình ảnh không đủ rộng!');
+- đã thêm định nghĩa('_RETRYFAILTOOMANYITEMS', 'Thử lại không thành công - bạn đã đạt đến giới hạn tệp của mình!');
+- ​​đã thêm defin('_ONLEAVE', 'Các tập tin đang được tải lên, nếu bạn rời đi ngay bây giờ thì quá trình tải lên sẽ bị hủy!');
+- đã thêm định nghĩa ('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Lỗi không thể khôi phục - trình duyệt này không cho phép tải lên bất kỳ loại tệp nào do lỗi nghiêm trọng trong iOS8 Safari. Vui lòng sử dụng iOS8 Chrome cho đến khi Apple khắc phục các sự cố này!');
+
+htdocs/lingu/english/uploader.php
+- đã thêm định nghĩa ('_ER_UP_INISIZE', 'Tệp đã tải lên vượt quá chỉ thị upload_max_filesize trong php.ini');
+- đã thêm định nghĩa('_ER_UP_FORMSIZE', 'Tệp đã tải lên vượt quá lệnh MAX_FILE_SIZE đã được chỉ định trong biểu mẫu HTML');
+- đã thêm định nghĩa('_ER_UP_PARTIAL', 'Tệp đã tải lên chỉ được tải lên một phần');
+- đã thêm định nghĩa('_ER_UP_NOFILE', 'Không có tệp nào được tải lên');
+- đã thêm định nghĩa('_ER_UP_NOTMPDIR', 'Thiếu thư mục tạm thời');
+- đã thêm định nghĩa('_ER_UP_CANTWRITE', 'Không thể ghi tệp vào đĩa');
+- đã thêm định nghĩa('_ER_UP_EXTENSION', 'Tệp tải lên bị dừng bởi tiện ích mở rộng. Xem phpinfo()');
+- đã thêm định nghĩa('_ER_UP_UNKNOWN', 'Lỗi tải lên không xác định');
+
+htdocs/lingu/english/user.php
+- ​​đã xóa định nghĩa('_US_USECOOKIE', 'Lưu tên người dùng của tôi vào cookie trong 1 năm');
+
+htdocs/modules/profile/ngôn ngữ/english/admin.php
+- đã thêm định nghĩa('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Bạn không thể hủy kích hoạt tài khoản Quản trị trang web');
+
+htdocs/modules/system/lingu/english/admin/comments.php
+- thêm định nghĩa('_MP_DELETECOUNT', 'Số lượng thành viên trong nhóm quá lớn ( > 4.000) ');
+
+htdocs/modules/system/lingu/english/admin/userrank.php
+- đã thêm định nghĩa ('_AM_SYSTEM_USERRANK_ERROR', 'Lỗi');
+
+nâng cấp/ngôn ngữ/english/upgrade.php
+- đã thêm định nghĩa('_LANGUAGE', 'Ngôn ngữ');
+- đã thêm định nghĩa('_SUPPORT', 'Hỗ trợ');
+- đã thêm định nghĩa('_XOOPS_SOURCE_CODE', 'XOOPS trên GitHub');
+- đã thêm định nghĩa('_PATCH_COUNT', 'Bộ bản vá');
+- đã thêm định nghĩa('_USERNAME_PLACEHOLDER', 'Tên người dùng của bạn');
+- đã thêm định nghĩa('_PASSWORD_PLACEHOLDER', 'Mật khẩu của bạn');
+- đã thêm định nghĩa('_CONTINUE', 'Tiếp tục');
+- đã thêm định nghĩa('XOOPS_ERROR_ENCOUNTERED', 'Error');
+- đã thêm định nghĩa ('XOOPS_ERROR_SEE_BELOW', 'Xem bên dưới để biết tin nhắn.');
+
+htdocs/themes/xbootstrap/lingu/english/main.php
+- đã thêm định nghĩa("THEME_USER_WELCOME", "Chào mừng");
+
+PHIM MỚI:
+- htdocs/modules/system/themes/transition/lingu/english/admin.php
+- htdocs/modules/system/themes/transition/lingu/english/localsupport.php
+
+- nâng cấp/ngôn ngữ/tiếng Anh/
+*LƯU Ý* Mã nâng cấp đã được thay đổi đáng kể, vì vậy những tệp này cần được xem xét kỹ lưỡng
+- đã di chuyển tất cả các tệp ngôn ngữ trên mỗi bản vá từ thư mục bản vá sang nâng cấp/ngôn ngữ/*
+  tức là nâng cấp/upd-2.0.18-to-2.3.0/lingu/english.php đã trở thành
+  nâng cấp/ngôn ngữ/tiếng Anh/upd-2.0.18-to-2.3.0.php
+
+- nâng cấp/ngôn ngữ/english/support.php (giống như htdocs/install/lingu/english/support.php)
+- nâng cấp/ngôn ngữ/tiếng Anh/welcome.php
+
+===============================
+27/05/2016: Phiên bản 2.5.8
+===============================
+ĐỊNH NGHĨA THÊM/XÓA
+
+/install/lingu/english/install.php
+/modules/system/lingu/english/admin/modulesadmin.php
+- đã thêm định nghĩa('_AM_SYSTEM_MODULES_INSTALL_MORE',"Cài đặt thêm mô-đun");
+
+/modules/system/lingu/english/admin/users.php
+định nghĩa('_AM_SYSTEM_USERS_ACTIVATE', 'Kích hoạt người dùng');
+
+/modules/system/lingu/english/blocks.php
+xác định('_MB_SYSTEM_BLOCK_HEIGHT',"Chiều cao khối (dòng)");
+
+cài đặt/ngôn ngữ/english/install.php
+định nghĩa('CHMOD_CHGRP_REPEAT', 'Thử lại');
+định nghĩa('CHMOD_CHGRP_IGNORE', 'Dù sao cũng sử dụng');
+xác định('CHMOD_CHGRP_ERROR', 'Trình cài đặt có thể không ghi được tệp cấu hình %1$s.<p>PHP đang ghi tệp theo người dùng %2$s và nhóm %3$s.<p>Thật thảm khốc
+
+ĐỔI ĐỊNH NGHĨA
+xoops_lib/modules/protector/lingu/english/modinfo.php
+định nghĩa($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/lingu/english/admin.php
+định nghĩa('_OXYGEN_CODESVN', 'Kho lưu trữ mã');
+
+cài đặt/ngôn ngữ/english/install.php
+định nghĩa('SAVED_MAINFILE', 'Đã lưu cài đặt');
+defin('ERR_NEED_WRITE_ACCESS', 'Máy chủ phải được cấp quyền ghi vào các tệp và thư mục sau<br />(tức là <em>chmod 775 danh mục_name</em> trên máy chủ UNIX/LINUX)<br />Nếu chúng không có sẵn hoặc không được tạo chính xác, vui lòng tạo thủ công và đặt quyền thích hợp.');
+xác định('ERR_COPY_MAINFILE', 'Không thể sao chép tệp phân phối sang %s');
+xác định('ERR_WRITE_MAINFILE', 'Không thể ghi vào %s. Vui lòng kiểm tra quyền của tệp và thử lại.');
+định nghĩa('ERR_READ_MAINFILE', 'Không thể mở %s để đọc');
+
+/modules/system/themes/zetadigme/lingu/english/admin.php
+định nghĩa('_MD_CODESVN', 'Kho lưu trữ mã');
+
+PHIM MỚI:
+/lingu/english/stopwords.php
+/ngôn ngữ/english/xmf.php
+
+CẬP NHẬT Ví dụ về lớp XoopsMailerLocal:
+htdocs/lingu/english/xoopsmailerlocal.php
+
+===============================
+14/06/2014: Phiên bản 2.5.7 Cuối cùng
+===============================
+ĐỊNH NGHĨA THÊM/XÓA
+
+/install/lingu/english/install.php
+- đã thêm định nghĩa('WRITTEN_LICENSE',"XOOPS %s Khóa giấy phép được viết: <strong>%s</strong>");
+
+===============================
+18/03/2014: Phiên bản 2.5.7 RC1
+===============================
+ĐỊNH NGHĨA THÊM/XÓA
+
+/modules/system/lingu/english/admin.php
+- đã thêm định nghĩa ('_AM_SYSTEM_USAGE',"Cách sử dụng");
+- đã thêm định nghĩa ('_AM_SYSTEM_ACTIVE',"Hoạt động");
+
+
+===============================
+15/04/2012: Phiên bản 2.5.5
+===============================
+ĐỊNH NGHĨA THÊM/XÓA
+
+/Frameworks/moduleclasses/moduleadmin/lingu/english/main.php
+- đã thêm định nghĩa("_AM_MODULEADMIN_HOME", "Trang chủ");
+- đã thêm định nghĩa("_AM_MODULEADMIN_DASHBOARD", "Bảng điều khiển");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT", "Giới thiệu");
+- đã thêm định nghĩa("_AM_MODULEADMIN_PERMISSIONS", "Quyền");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Đã phát hành: ");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT_AUTHOR","Tác giả: ");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT_CREDITS","Credits: ");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT_LICENSE","Giấy phép: ");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Tên tác giả: ");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Thông tin tác giả");
+- đã thêm định nghĩa("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Mô-đun này được duy trì bởi <a class='tooltip' rel='external' href='http://xoops.org/' title='Truy cập cộng đồng XOOPS'>Cộng đồng XOOPS</a></div>");
+
+/ngôn ngữ/english/calendar.php
+- đã thêm định nghĩa("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/lingu/english/modinfo.php
+
+- đã thêm định nghĩa($constpref."_ADMINHOME","Home");
+- đã thêm định nghĩa($constpref."_ADMINABOUT","Giới thiệu");
+- đã thêm định nghĩa($constpref.'_STOPFORUMSPAM_ACTION','Dừng spam diễn đàn');
+- đã thêm định nghĩa($constpref.'_STOPFORUMSPAM_ACTIONDSC','Kiểm tra dữ liệu POST đối với những kẻ gửi thư rác đã đăng ký trên cơ sở dữ liệu www.stopforumspam.com. Yêu cầu php CURL lib.');
+
+
+/install/lingu/english/install.php
+- đã thêm định nghĩa( "FILTER_FUNCTIONS", "Chức năng lọc");
+
+/ngôn ngữ/english/global.php
+- đã thêm định nghĩa('_DBDATESTRING', 'Y-m-d');
+- đã thêm định nghĩa('_DBTIMESTRING', 'H:i:s');
+- đã thêm định nghĩa('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/ngôn ngữ/english/pmsg.php
+- đã thêm định nghĩa('_PM_READ', 'Đã đọc');
+
+/modules/system/lingu/english/admin.php
+- đã thêm định nghĩa("_AM_SYSTEM_UNINSTALL","Gỡ cài đặt");
+
+XEM THÊM:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+17/11/2011: Phiên bản 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/lingu/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: Phiên bản 2.5.4 RC
+===============================
+
+PHIM MỚI:
+module/pm/lingu/english/help/help.html
+module/profile/ngôn ngữ/english/help/help.html
+module/protector/ngôn ngữ/english/help/help.html
+
+ĐỊNH NGHĨA THÊM/XÓA
+
+/ngôn ngữ/english/pmsg.php
+xóa định nghĩa('_PM_READ', 'Đã đọc');
+
+/ngôn ngữ/english/user.php
+- đã thêm định nghĩa('_US_SKYPE', 'Skype');
+- đã thêm định nghĩa('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/lingu/english/main.php
+- đã xóa định nghĩa("_PM_RECEIVE","RECEIVE");
+- đã xóa định nghĩa("_PM_POST","POST");
+- đã xóa định nghĩa("_PM_READBOX","READBOX");
+- đã xóa định nghĩa("_PM_RSAVEBOX","Receive_SAVEBOX");
+- đã xóa định nghĩa("_PM_SENTBOX","SENTBOX");
+- đã xóa định nghĩa("_PM_PSAVEBOX","Post_SAVEBOX");
+- đã xóa định nghĩa("_PM_SAVED","Đã lưu thành công");
+- đã xóa định nghĩa("_PM_TOC","Từ: ");
+- đã xóa định nghĩa("_PM_UID","ID của người gửi");
+
+/ngôn ngữ/english/findusers.php
+- đã thêm định nghĩa('_MA_USER_FACEBOOK', 'Liên kết Facebook'); // LÀM
+- đã thêm định nghĩa('_MA_USER_SKYPE', 'Liên kết Skype');//ĐỂ LÀM
+
+/modules/pm/lingu/english/modinfo.php
+- đã thêm định nghĩa("_PM_MI_ABOUT", "Giới thiệu");
+
+/modules/profile/lingu/english/admin.php
+- đã thêm định nghĩa('_PROFILE_AM_ACTION', 'Hành động');
+
+/modules/profile/lingu/english/modinfo.php
+- đã thêm định nghĩa("_PROFILE_MI_ABOUT", "Giới thiệu");
+- đã thêm định nghĩa("_PROFILE_MI_HOME", "Trang chủ");
+
+
+/modules/system/lingu/english/admin/preferences.php
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Cài đặt chung");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Cài đặt thông tin người dùng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Thẻ Meta và Chân trang");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Tùy chọn kiểm duyệt từ");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Tùy chọn tìm kiếm");
+- ​​đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Thiết lập Email");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Tùy chọn xác thực");*/
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","Một công bằng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","Một công bằng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","Một công bằng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","Một công bằng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","Một công bằng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","Một công bằng");
+- đã xóa định nghĩa("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","Một công bằng");
+- đã xóa định nghĩa("_MD_AM_LOADINGIMG", "Hiển thị đang tải... hình ảnh?");
+- đã xóa định nghĩa("_MD_AM_CHNGUTHEME", "Thay đổi chủ đề của tất cả người dùng");
+
+/modules/system/lingu/english/admin/users.php
+- đã thêm định nghĩa("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Chấp nhận email từ Quản trị viên");
+
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_NAV_MANAGER","Trình quản lý người dùng");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_USERPOST","Bài đăng của người dùng");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_STORIES","Stories");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_COMMENTS","Nhận xét");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_PTBBTSDIYT","Nhấn nút bên dưới để đồng bộ hóa dữ liệu nếu bạn cho rằng thông tin bài đăng của người dùng ở trên dường như không cho biết trạng thái thực tế");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_CNGTCOM","Không thể nhận được tổng số nhận xét");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_CNGTST","Không thể lấy toàn bộ câu chuyện");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_LIST","List");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_USERPOST","Bài đăng của người dùng");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_STORIES","Stories");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_COMMENTS","Nhận xét");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_PTBBTSDIYT","Nhấn nút bên dưới để đồng bộ hóa dữ liệu nếu bạn cho rằng thông tin bài đăng của người dùng ở trên không cho biết trạng thái thực tế");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_CNGTCOM","Không thể lấy hết bình luận");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_CNGTST","Không thể lấy tất cả các câu chuyện");
+- đã xóa định nghĩa("_AM_SYSTEM_USERS_LIST","List");
+
+xoops_lib/modules/protector/lingu/english/admin.php
+- đã thêm định nghĩa("_AM_ADV_REGISTERGLOBALS2","và đặt vào đó dòng bên dưới:");
+
+CÁC TẬP TIN ĐÃ THAY ĐỔI:
+
+/modules/system/lingu/english/admin/users.php (Mamba)/
+/ngôn ngữ/tiếng Anh/mail_template/activated.tpl
+/ngôn ngữ/tiếng Anh/mail_template/adminactivate.tpl
+/ngôn ngữ/tiếng Anh/mail_template/lostpass1.tpl
+/ngôn ngữ/tiếng Anh/mail_template/lostpass2.tpl
+/ngôn ngữ/tiếng Anh/mail_template/register.tpl
+/lingu/english/mail_template/welcome.tpl
+/modules/system/lingu/english/admin/avatars.php
+/modules/system/lingu/english/admin/banners.php
+/modules/system/lingu/english/admin/blocksadmin.php
+/modules/system/lingu/english/admin/comments.php
+/modules/system/lingu/english/admin/preferences.php
+/modules/system/lingu/english/admin/userrank.php
+/modules/system/lingu/english/admin/users.php
+/modules/system/lingu/english/help/mailusers.html
+/modules/system/lingu/english/help/preferences.html
+/modules/system/lingu/english/admin.php
+/modules/system/lingu/english/blocks.php
+/modules/system/lingu/english/modinfo.php
+/modules/system/themes/default/lingu/english/admin.php
+/modules/system/themes/zetadigme/lingu/english/admin.php
+/themes/suico/lingu/english/main.php
+/themes/zetagenesis/lingu/english/main.php
+
+
+===============================
+2011/10/05: Phiên bản 2.5.4 Beta
+===============================
+- đã cập nhật một số bản dịch tiếng Anh (DCrussader/Mamba)
+- đã xóa ngôn ngữ/tiếng Anh/calendar.php _CAL_DEF_DATE_FORMAT
+- đã xóa ngôn ngữ/tiếng Anh/calendar.php _CAL_TT_DATE_FORMAT
+- đã xóa mô-đun/hệ thống/ngôn ngữ/english/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- đã xóa mô-đun/system/ngôn ngữ/english/admin/preferences.php _MD_AM_LOADINGIMG
+- đã xóa mô-đun/system/ngôn ngữ/english/admin/preferences.php _MD_AM_CHNGUTHEME
+- đã xóa mô-đun/pm/ngôn ngữ/english/admin/main.php _PM_RECEIVE, _PM_POST, _PM_READBOX, _PM_RSAVEBOX, _PM_SENTBOX, _PM_PSAVEBOX, _PM_SAVED, _PM_TOC
+- đã thêm /modules/profile/ngôn ngữ/english/admin.php _PROFILE_AM_ACTION
+- đã thêm /modules/profile/lingu/english/main.php _PROFILE_MI_ABOUT
+- đã thêm /modules/profile/ngôn ngữ/english/main.php _PROFILE_MI_HOME
+- đã thêm /modules/pm/lingu/english/modinfo.php _PM_MI_ABOUT
+- đã thêm mô-đun/hệ thống/ngôn ngữ/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- đã thêm ngôn ngữ/tiếng Anh/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/lingu/english/modinfo.php
+- đã thêm định nghĩa($constpref.'_STOPFORUMSPAM_ACTION','Dừng spam diễn đàn');
+- đã thêm định nghĩa($constpref.'_STOPFORUMSPAM_ACTIONDSC','Kiểm tra dữ liệu POST đối với những kẻ gửi thư rác đã đăng ký trên cơ sở dữ liệu www.stopforumspam.com. Yêu cầu php CURL lib.');
+
+
+
+===============================
+2011/09/06: Phiên bản 2.5.2 RC
+===============================
+ - đã thêm ngôn ngữ/tiếng Anh/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - đã thêm ngôn ngữ/tiếng Anh/pmsg.php _PM_SURE_TO_DELETE, _PM_READ
+ - đã thêm mô-đun/pm/ngôn ngữ/english/admin/main.php _PM_READ, _PM_SUBJECT_ICONS
+ - module\system/lingu/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - đã xóa mô-đun/hệ thống/chủ đề/mặc định/ngôn ngữ/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - đã xóa mô-đun/hệ thống/ngôn ngữ/tiếng Anh/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - đã thêm ngôn ngữ/tiếng Anh/calendar.php _CAL_DEF_DATE_FORMAT
+ - đã thêm ngôn ngữ/tiếng Anh/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+15/03/2011: Phiên bản 2.5.1 RC
+===============================
+
+Đã thêm hằng số ngôn ngữ:
+  module/system/ngôn ngữ/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  module/system/themes/default/ngôn ngữ/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Hằng số ngôn ngữ được sửa đổi:
+  module/system/themes/default/ngôn ngữ/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  mô-đun/hệ thống/ngôn ngữ/tiếng Anh/helper/help_center.html, moduleadmin.html
+
+Đã xóa hằng ngôn ngữ:
+  module/system/themes/default/ngôn ngữ/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
+  module/system/themes/default/ngôn ngữ/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY

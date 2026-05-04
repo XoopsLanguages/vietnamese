@@ -1,0 +1,138 @@
+html CÔNG KHAI "-//W3C//DTD HTML 4.01 Chuyển tiếp//EN"
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Hướng dẫn cài đặt XOOPS</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>Đang cài đặt XOOPS</h1>
+<h2>Lần đầu cài đặt</h2>
+<h3>Lời nói đầu:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> là mã nguồn mở
+        Hệ thống xuất bản Web hướng đối tượng được viết bằng PHP. Nó là một công cụ lý tưởng cho
+        phát triển các trang web cộng đồng năng động từ nhỏ đến lớn, cổng thông tin nội bộ công ty, cổng thông tin công ty, blog và nhiều hơn thế nữa.
+    </p>
+<p>
+        XOOPS được phát hành theo các điều khoản của
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">Giấy phép Công cộng GNU (GPL)</a>
+        phiên bản 2 trở lên và được sử dụng và sửa đổi miễn phí.
+        Việc phân phối lại là miễn phí miễn là bạn tuân thủ các điều khoản phân phối của GPL.
+    </p>
+<h2>Yêu cầu</h2>
+<ul>
+<li>Máy chủ WWW (
+Bộ mẫu<a href="http://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS, v.v.)</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 trở lên, khuyến nghị 8.4+</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 trở lên, khuyến nghị MySQL 8.4.5+</li>
+</ul>
+<h3>Trước khi cài đặt</h3>
+<ol>
+<li>Thiết lập máy chủ WWW, máy chủ PHP và cơ sở dữ liệu đúng cách.</li>
+<li>Chuẩn bị cơ sở dữ liệu cho trang XOOPS của bạn.</li>
+<li>Chuẩn bị tài khoản người dùng và cấp cho người dùng quyền truy cập vào cơ sở dữ liệu.</li>
+<li>Làm cho các thư mục và tập tin có thể ghi được: %s</li>
+<li>Để cân nhắc vấn đề bảo mật, bạn nên chuyển hai thư mục bên dưới ra khỏi <a href="http://phpsec.org/projects/guide/3.html" rel="external">gốc tài liệu</a> và đổi tên thư mục: %s</li>
+<li>Tạo (nếu chưa có) và làm cho các thư mục có thể ghi được: %s</li>
+<li>Bật cookie và JavaScript của trình duyệt của bạn.</li>
+</ol>
+<h2>Đang cài đặt cục bộ</h2>
+<p>Nếu bạn đang chạy một môi trường cục bộ để phát triển hoặc thử nghiệm, hãy đảm bảo rằng bạn có phiên bản trước đó
+    yêu cầu được đáp ứng. Khi việc này hoàn tất, hãy sao chép nội dung của <em>htdocs
+trạng thái</em> (từ XOOPS
+    distribution file) vào đường dẫn tài liệu gốc của môi trường web của bạn. Khi các tập tin được sao chép vào đó,
+    bạn có thể bắt đầu cài đặt bằng cách trỏ trình duyệt của bạn tới "http://<em>yoursite.com</em>". Thao tác này sẽ bắt đầu quá trình cài đặt.
+</p>
+<h2>Cài đặt trên nền tảng được lưu trữ</h2>
+<p>Nếu bạn đang chạy trong môi trường được lưu trữ trên máy chủ, hãy giải nén các tệp XOOPS cục bộ hoặc trên máy chủ nếu bạn có
+    quyền truy cập shell (tức là SSH). Sau khi hoàn tất, hãy đảm bảo di chuyển hoặc sao chép tất cả các tệp XOOPS từ <em>htdocs
+trạng thái</em>
+    vào thư mục web gốc của bạn (nhà cung cấp của bạn thường cung cấp chỉ đường cho vị trí này).
+    Sau khi các tệp được sao chép vào đó, bạn có thể bắt đầu cài đặt bằng cách trỏ trình duyệt của mình tới
+    "http://<em>yoursite.com</em>". Thao tác này sẽ bắt đầu quá trình cài đặt.
+</p>
+<h2>Tiếp tục cài đặt</h2>
+<p>Chỉ cần làm theo hướng dẫn từng bước trong trình cài đặt.</p>
+</div>
+</body>
+</html>
